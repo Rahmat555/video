@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Fullscreen Autoplay Video</title>
+  <style>
+    /* Remove default margins and padding */
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    /* Make the video fill the entire window */
+    html, body {
+      width: 100%;
+      height: 100%;
+      overflow: hidden; /* Hide any scroll bars */
+    }
+    video {
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: contain; /* Ensures the video covers entire area */
+    }
+  </style>
+</head>
+<body>
+
+  <video autoplay muted loop>
+    <source src="/IMG_9431.MP4" type="video/mp4" />
+  </video>
+
+</body>
+</html>
